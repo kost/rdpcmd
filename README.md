@@ -44,4 +44,6 @@ Since it is Proof of Concept (PoC), it have some limitations (pull requests are 
 * Does not handle errors well (connection failure, wrong credentials, etc)
 * Works best if you don't have anything else open (especially other RDP sessions)
 * Will not report if it fails
+* You have to play with timeouts/sleeps if you have slow network or host targets
+
 
