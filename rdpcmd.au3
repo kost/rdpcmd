@@ -12,6 +12,7 @@ if $CmdLine[0] > 4 then
 Else
 	$sleep = 0
 EndIf
+$sleepwait=3000
 
 run("cmdkey /generic:""" & $servername & """ /user:""" & $username & """ /pass:""" & $password & """")
 run("mstsc /console /v:"& $servername)
@@ -55,7 +56,7 @@ send("{ALT}y")
 Sleep(2000)
 
 send($cmd & "{ENTER}")
-Sleep($sleep+1000)
+Sleep($sleep+$sleepwait)
 if $sleep > 0 Then
    send("exit{ENTER}")
 EndIf
