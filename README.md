@@ -13,7 +13,7 @@ reg import disable-confirmations.reg
 
 Note: You need only to run this on host where you will rdpcmd from. You do not have to do it on the hosts you're connecting. Be aware also that rdpcmd will not work if you do not disable confirmations.
 
-Warning: Disabling confirmations have its security implications. That means you will not get confirmation for new/invalid security certificates.
+Warning: Disabling confirmations have its security implications. That means you will not get confirmation for new/invalid security certificates when connecting with RDP (Only affects RDP!).
 
 ## Usage
 
